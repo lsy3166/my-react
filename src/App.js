@@ -5,11 +5,7 @@ import "./App.css";
 
 function App() {
   const title = "React World!";
-  const movies = [
-    { title: "Star Wars1", year: "1979" },
-    { title: "Star Wars2", year: "1980" },
-    { title: "Star Wars3", year: "1981" },
-  ];
+  const movies = [];
   return (
     <div className="App">
       {/* {Component} */}

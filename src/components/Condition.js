@@ -6,8 +6,9 @@ function Condition() {
   };
 
   useEffect(() => {
-    console.log(condition);
+    console.log(`condition useEffect : ${condition}`);
   }, [condition]);
+
   let conditionText = condition ? "True" : "False";
 
   return (

@@ -9,7 +9,7 @@ function Count(props) {
 
   return (
     <div>
-      <h1>Hello, {props.name}</h1>
+      <span>Hello, {props.name} </span>
       <button onClick={onClick}>
         {clickName} : {count}
       </button>

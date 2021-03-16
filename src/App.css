@@ -16,3 +16,15 @@
   color: red;
   font-size: 0.5rem;
 }
+
+.alert {
+  background-color: red;
+  border: 0;
+  color: wheat;
+  border-radius: 3px;
+}
+
+.alignItemCenter {
+  display: flex;
+  align-items: center;
+}
