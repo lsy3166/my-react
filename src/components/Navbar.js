@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,15 +18,15 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item active">
-            <Link className="nav-link" to="/movies">
-              Movies <span className="sr-only">(current)</span>
-            </Link>
+          <li className="nav-item">
+            <NavLink className="nav-link" activeClassName="active" to="/movies">
+              Movies
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/users">
+            <NavLink className="nav-link" activeClassName="active" to="/users">
               Users
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
