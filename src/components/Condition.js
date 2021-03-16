@@ -13,8 +13,17 @@ function Condition() {
 
   return (
     <div>
-      <div>{conditionText}</div>
-      <button onClick={onClick}>Toggle</button>
+      <span class="m-1">{conditionText}</span>
+      <button
+        type="button"
+        class="btn btn-primary m-1"
+        data-toggle="button"
+        aria-pressed="false"
+        autocomplete="off"
+        onClick={onClick}
+      >
+        Toggle
+      </button>
     </div>
   );
 }

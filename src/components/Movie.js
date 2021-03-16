@@ -12,27 +12,40 @@ function Movie(props) {
     setMovies(deletedMovies);
   };
 
-  const renderMovie = movies.length
-    ? movies.map((movie) => {
-        return (
-          <div className="movie" key={movie.id}>
-            <div className="movie-title">
-              {movie.title}
-              <span className="movie-year"> ({movie.year})</span>
-            </div>
-            <div>
-              <button
+  const renderMovie = movies.length ? (
+    movies.map((movie) => {
+      return (
+        <div className="movie m-2 p-2" key={movie.id}>
+          <div className="movie-title">
+            {movie.title}
+            <span className="movie-year"> ({movie.year})</span>
+          </div>
+          <div>
+            {/* <button
                 className="alert"
                 // 함수에 인자 전달하기
                 onClick={deleteMovie.bind(null, movie.id)}
               >
                 삭제
-              </button>
-            </div>
+              </button> */}
+
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-toggle="button"
+              aria-pressed="false"
+              autocomplete="off"
+              onClick={deleteMovie.bind(null, movie.id)}
+            >
+              삭제
+            </button>
           </div>
-        );
-      })
-    : "추가된 영화가 없습니다.";
+        </div>
+      );
+    })
+  ) : (
+    <div className="m-2 p-2 text-info">추가된 영화가 없습니다.</div>
+  );
 
   const addMovie = (movie) => {
     setMovies([...movies, movie]);

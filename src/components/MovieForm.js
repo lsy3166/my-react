@@ -33,21 +33,24 @@ function MovieForm({ addMovie }) {
 
   return (
     <form onSubmit={onSubmit}>
-      <div className="alignItemCenter">
+      <div className="alignItemCenter m-2">
         <input
           type="text"
-          placeholder="영화제목"
+          class="form-control w-25"
+          placeholder="영화 제목"
           value={movieTitle}
           onChange={(e) => setMovieTitle(e.target.value)}
         ></input>
+
         <br></br>
         <input
           type="number"
-          placeholder="개봉년도"
+          class="form-control w-25"
+          placeholder="개봉 년도"
           value={movieYear}
           onChange={(e) => setMovieYear(e.target.value)}
         ></input>
-        <button className="button" type="submit">
+        <button class="btn btn-primary mb-1" type="submit">
           영화 추가
         </button>
       </div>
