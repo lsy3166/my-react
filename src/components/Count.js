@@ -9,14 +9,13 @@ function Count(props) {
 
   return (
     <div>
-      <span class="m-1">Hello, {props.name} </span>
+      <span className="m-1">Hello, {props.name} </span>
 
       <button
         type="button"
-        class="btn btn-primary m-1"
+        className="btn btn-primary m-1"
         data-toggle="button"
         aria-pressed="false"
-        autocomplete="off"
         onClick={onClick}
       >
         {clickName} : {count}

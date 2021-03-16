@@ -31,10 +31,9 @@ function Movie(props) {
 
             <button
               type="button"
-              class="btn btn-danger"
+              className="btn btn-danger"
               data-toggle="button"
               aria-pressed="false"
-              autocomplete="off"
               onClick={deleteMovie.bind(null, movie.id)}
             >
               삭제
