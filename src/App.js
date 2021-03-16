@@ -10,17 +10,19 @@ function App() {
     <Router>
       <div className="App">
         <Navbar></Navbar>
-        <Switch>
-          <Route path="/movies">
-            <Movies></Movies>
-          </Route>
-          <Route path="/users">
-            <Users></Users>
-          </Route>
-          <Route path="/">
-            <Home></Home>
-          </Route>
-        </Switch>
+        <div className="container">
+          <Switch>
+            <Route path="/movies">
+              <Movies></Movies>
+            </Route>
+            <Route path="/users">
+              <Users></Users>
+            </Route>
+            <Route path="/">
+              <Home></Home>
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
